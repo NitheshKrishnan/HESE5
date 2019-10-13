@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="m1" class="edu.jspiders.setterinjection.beans.Mobile">
+	
+		<property name="id" value="1"/>
+		<property name="brand" value="One Plus"/>
+		<property name="name" value="5T"/>
+		<property name="price" value="53999"/>
+	
+	</bean>
+	
+	<bean id="m2" class="edu.jspiders.setterinjection.beans.Mobile">
+	
+		<property name="id" value="2"/>
+		<property name="brand" value="Mi"/>
+		<property name="name" value="Note 7 Pro"/>
+		<property name="price" value="14000"/>
+	
+	</bean>
+
+</beans>
