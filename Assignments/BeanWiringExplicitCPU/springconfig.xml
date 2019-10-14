@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="r1" class="edu.jspiders.beanwiringexplicit.beans.Refil">
+		
+		<property name="id" value="1"/>
+		<property name="name" value="cello"/>
+	
+	</bean>
+	
+	<bean id="r2" class="edu.jspiders.beanwiringexplicit.beans.Refil">
+		
+		<constructor-arg name="id" value="2"/>
+		<constructor-arg name="name" value="reynolds"/>
+	
+	</bean>
+	
+	<bean id="p" class="edu.jspiders.beanwiringexplicit.beans.Pen">
+		
+		<property name="id" value="1"/>
+		<property name="name" value="parker"/>
+		<property name="refil" ref="r2"/>
+	</bean>
+
+</beans>
